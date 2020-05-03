@@ -5,7 +5,7 @@
     margin-bottom: 0px;
     color: white;
     letter-spacing: 2pt;
-    border-color: black;
+
 
 }
 
@@ -14,9 +14,6 @@
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 0px;
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
 }
 
 .footer-area {
@@ -24,9 +21,7 @@
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 0px;
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
+
 }
 
 .top-text{
@@ -59,7 +54,7 @@
 .middle-bullets{
     color:#009DCF;
     font-family: 'Sen-Regular', sans-serif;
-    letter-spacing: 2pt;
+    letter-spacing: 1pt;
     line-height: 15pt;
 }
 
