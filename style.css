@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+body {
+    font-family: 'Open Sans';
+    background: #F2F4F6;
+}
+h1 {
+    font-size: 60px;
+    margin: 0;
+}
+h2 {
+    font-size: 40px;
+    margin: 0;
+}
+h3 {
+    font-size: 32px;
+    margin: 0;
+}
+h4 {
+    font-size: 30px;
+    margin: 0;
+}
+.font-bold {
+    font-weight: bold;
+}
+.color-white {
+    color: #fff;
+}
+.color-black {
+    color: #232029;
+}
+.inn-banner {
+    background: #232029;
+    padding-top:35px;
+}
+.inn-banner-heading {
+    margin-top: 80px;
+}
+.inn-banner-text {
+    font-size: 20px;
+}
+.inn-banner-link, .inn-banner-link:hover, .inn-banner-link:active{
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+}
+.inn-banner-link span {
+    position: relative;
+    width: 18px;
+    display: inline-block;
+    font-size: 31px;
+    margin-left: 22px;
+}
+.inn-banner-link span:before {
+    content: '';
+    height: 2px;
+    width: 15px;
+    position: absolute;
+    top: 53%;
+    left: 0;
+    background: #fff;
+}
+.inn-content-title {
+    border-bottom: 3px solid #FFAE00;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+.inn-content-links {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    min-height: 250px;
+}
+.inn-content-links ul {
+    padding: 0;
+}
+.inn-content-links ul li {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.inn-content-links ul li a {
+    color: #009DCF;
+    font-size: 24px;
+}
+.inn-content-links ul li img {
+    margin-right: 5px;
+}
+.inn-footer {
+    background: #009DCF;
+    height: 110px;
+    position: relative;
+}
+.inn-foot-bg {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.inn-foot-white {
+    background: #fff;
+    height: 100%;
+    max-width: 45%;
+    flex: 0 0 45%;
+}
+.inn-foot-blue {
+    max-width: 55%;
+    flex: 0 0 55%;
+}
+.inn-footer-white {
+    letter-spacing: 1px;
+    min-height: 110px
+}
+.inn-footer-blue {
+    
+    min-height: 110px
+}
+.inn-footer-blue p {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+}
+.inn-footer-white i {
+    color: #f00
+}
+@media (max-width: 600px) {
+    .inn-footer-white {
+        background: #fff;
+    }
+    .inn-footer-blue {
+        background: #009DCF;
+    }
+}
