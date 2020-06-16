@@ -2,13 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/jquery-3.1.0.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./res.style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Innovatics- Where Innovation Happens</title>
+    <title>Where Innovation Blends with Analytics</title>
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -18,90 +23,1211 @@
     <!-- End Google Tag Manager -->
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4CS7GB"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div class="inn-body">
-        <div class="inn-banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-5">
-                        <img src="img/Logo Light.png" alt="Logo" />
-                        <div class="inn-banner-heading color-white">
-                            <h1 class="font-bold mb-5">Launching Soon</h1>
-                            <h3 class="mb-4">Where Innovation Happens</h3>
-                            <p class="inn-banner-text">Get Product Experience Like Never Before</p>
-                            <!-- <a class="inn-banner-link d-flex align-items-center mb-4" href="javascript:void(0)">Free Consultancy <span class="text-right"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a> -->
+    <div class="inv-top-bar">
+        <div class="navbar-container">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" data-overlay data-sticky="top">
+                <div class="container">
+                    <a class="navbar-brand fade-page" href="index.html"><img alt="No image available" src="img/Logo Light.png" alt="Logo" /></a>
+                    <button class="navbar-toggler collapsed inv-mobile-toggle" type="button" id="toggler">
+                        <i class="fa fa-bars" aria-hidden="true"></i>    
+                    </button>
+                    <div class="navbar-collapse justify-content-end inv-menu">
+                        <ul class="navbar-nav ml-auto inv-dashboard">
+                            <li class="nav-item dropdown">
+                                <a href="aboutus.html" class="nav-link">About Us</a>
+                                <div class="dropdown-content">
+                                    <div class="d-flex w-100 inv-menu-drop-container">
+                                        <div class="column-block d-flex flex-column">
+                                            <div>
+                                                <h5 class="color-blue">About Us </h5>
+                                                <p>We, Innovatics, aim to position our company as one of the foremost digital product development companies in the world.We, Innovatics, aim to position our company as one of the foremost digital product development companies in the world.</p>
+                                            </div>
+                                            <div class="mt-auto"><a href="aboutus.html" class="inv-view-more color-dark">Learn more</a></div>
+                                        </div>
+                                        <div class="column-block d-flex flex-column">
+                                            <div>
+                                                <h5 class="color-blue">How we work </h5>
+                                                <p>Indeed, no single digitization and development model fits into all businesses. Each business has its unique market position based on multiple factors.</p>
+                                            </div>
+                                            <div class="mt-auto"><a href="how-we-work.html" class="inv-view-more color-dark">Learn more</a></div>
+                                        </div>
+                                        <div class="column-block d-flex flex-column">
+                                            <div>
+                                                <h5 class="color-blue">Insights </h5>
+                                                <p>Our latest blogs feature trending technologies and insights on business methodologies to let you build a stronger market position.</p>
+                                            </div>
+                                            <div class="mt-auto"><a href="blog.html" class="inv-view-more color-dark">Learn more</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="footer d-flex">
+                                        <button onclick="location.href='contact-us.html'">
+                                            Got a Product Idea ? Initiate a Discussion <img alt="No image available" src="img/icon-arrow-white.png" />
+                                        </button>
+                                        <button onclick="location.href='career.html'">
+                                            Can you bring value  ? Join The Team  <img alt="No image available" src="img/icon-arrow-white.png" />
+                                        </button>
+                                    </div>   
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="service.html" class="nav-link">Services</a>
+                                <div class="dropdown-content">
+                                    <div class="d-flex w-100 inv-menu-drop-container">
+                                        <div class="column">
+                                            <h5 class="color-blue">Product Development</h5>
+                                            <div>
+                                                <a href="service.html#product-building">Prototyping Building</a>
+                                            </div>
+                                            <div>
+                                                <a href="service.html#mvp-development">MVP Development</a>
+                                            </div>
+                                            <div>
+                                                <a href="service.html#product-roadmap">Product Roadmap</a>
+                                            </div>
+                                            <div>
+                                                <a href="service.html#scaling-up">Scaling Up</a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <h5 class="color-blue">Hire Team </h5>
+                                            <div>
+                                                <a href="hiring-team.html#team-hiring">MVP Builders</a>
+                                            </div>
+                                            <div>
+                                                <a href="hiring-team.html#build-team">UI/UX Innovators</a>
+                                            </div>
+                                            <div>
+                                                <a href="hiring-team.html#team-hiring">Product Developers</a>
+                                            </div>
+                                            <div>
+                                                <a href="hiring-team.html#build-team">Product Success Strategists</a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <h5 class="color-blue">Machine Learning</h5>
+                                            <div>
+                                                <a href="technology.html#machine-learning">Task Automation</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#machine-learning">Process Automation</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#machine-learning">Resource</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#machine-learning">Empowerment</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html">BI-driven Growth</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html">Strategy</a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <h5 class="color-blue">Technology</h5>
+                                            <div>
+                                                <a href="technology.html#app-development">Apps Development</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#web-solution">Portal Development</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#machine-learning">Machine Learning</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#cloud-consulting">Cloud Consulting</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#analytics-consulting">Analytic Consulting</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <button onclick="location.href='contact-us.html'">
+                                            Got a Product Idea ? Initiate a Discussion <img alt="No image available" src="img/icon-arrow-white.png" />
+                                        </button>
+                                    </div>   
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="technology.html" class="nav-link">Technology</a>
+                                <div class="dropdown-content">
+                                    <div class="d-flex w-100 inv-menu-drop-container">
+                                        <div class="column">
+                                            <h5 class="color-blue#app-development">Mobile Technology </h5>
+                                            <div>
+                                                <a href="technology.html#app-development">Android</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#app-development">iOS</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#app-development">React Native</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#app-development">Flutter </a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <h5 class="color-blue">Web Technology </h5>
+                                            <div>
+                                                <a href="technology.html#web-solution">Django</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#web-solution">Tornado</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#web-solution">Flask</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#web-solution">Larave</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#web-solution">ROR</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#web-solution">Springboot</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#web-solution">Node.js</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#web-solution">Angular</a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <h5 class="color-blue">Cloud Consulting </h5>
+                                            <div>
+                                                <a href="technology.html#cloud-consulting">AWS</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#cloud-consulting">Gcloud</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#cloud-consulting">Azure</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#cloud-consulting">AWS LEX</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#cloud-consulting">Google Dialogue flow</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#cloud-consulting">Microsoft LUIS</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#cloud-consulting">IBM Watson </a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#cloud-consulting">Rasa </a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <h5 class="color-blue">BI Tools</h5>
+                                            <div><a href="technology.html#bi">Power BI</a></div>
+                                            <div><a href="technology.html#bi">Tableau</a></div>
+                                            <div><a href="technology.html#bi">Plotly</a></div>
+                                        </div>
+                                        <div class="column">
+                                            <h5 class="color-blue">Machine Learning</h5>
+                                            <div><a href="technology.html#machine-learning">Chatbot Development</a></div>
+                                            <div><a href="technology.html#machine-learning">Process Automation </a></div>
+                                            <div><a href="technology.html#machine-learning">Natural Language Processing</a></div>
+                                            <div><a href="technology.html#machine-learning">Recommendation Engine</a></div>
+                                            <div><a href="technology.html#machine-learning">Deep learning</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <button onclick="location.href='contact-us.html'">
+                                            Got a Product Idea ? Initiate a Discussion <img alt="No image available" src="img/icon-arrow-white.png" />
+                                        </button>
+                                    </div>   
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="career.html" class="nav-link">Career</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="hiring-team.html" class="nav-link">Hire Team</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto inv-mobile">
+                            <li class="inv-close-icon">
+                                <a href="javascript:void(0)" id="colse2"><i class="fa fa-times" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="javascript:void(0)" class="nav-link">
+                                    About Us
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </a>
+                                <div class="dropdown-content">
+                                    <div class="d-flex w-100 inv-menu-drop-container">
+                                        <div class="column-block d-flex flex-column">
+                                            <div>
+                                                <h5 class="color-blue">About Us </h5>
+                                                <p>We, Innovatics, aim to position our company as one of the foremost digital product development companies in the world.We, Innovatics, aim to position our company as one of the foremost digital product development companies in the world.</p>
+                                            </div>
+                                            <div class="mt-auto"><a href="aboutus.html" class="inv-view-more color-dark">Learn more</a></div>
+                                        </div>
+                                        <div class="column-block d-flex flex-column">
+                                            <div>
+                                                <h5 class="color-blue">How we work </h5>
+                                                <p>Indeed, no single digitization and development model fits into all businesses. Each business has its unique market position based on multiple factors.</p>
+                                            </div>
+                                            <div class="mt-auto"><a href="how-we-work.html" class="inv-view-more color-dark">Learn more</a></div>
+                                        </div>
+                                        <div class="column-block d-flex flex-column">
+                                            <div>
+                                                <h5 class="color-blue">Insights </h5>
+                                                <p>Our latest blogs feature trending technologies and insights on business methodologies to let you build a stronger market position.</p>
+                                            </div>
+                                            <div class="mt-auto"><a href="blog.html" class="inv-view-more color-dark">Learn more</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="footer d-flex">
+                                        <button onclick="location.href='contact-us.html'">
+                                            Got a Product Idea ? Initiate a Discussion <img alt="No image available" src="img/icon-arrow-white.png" />
+                                        </button>
+                                        <button onclick="location.href='career.html'">
+                                            Can you bring value  ? Join The Team  <img alt="No image available" src="img/icon-arrow-white.png" />
+                                        </button>
+                                    </div>   
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="javascript:void(0)" class="nav-link">
+                                    Services
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </a>
+                                <div class="dropdown-content">
+                                    <div class="d-flex w-100 inv-menu-drop-container">
+                                        <div class="column">
+                                            <h5 class="color-blue">Product Development</h5>
+                                            <div>
+                                                <a href="service.html#product-building">Prototyping Building</a>
+                                            </div>
+                                            <div>
+                                                <a href="service.html#mvp-development">MVP Development</a>
+                                            </div>
+                                            <div>
+                                                <a href="service.html#product-roadmap">Product Roadmap</a>
+                                            </div>
+                                            <div>
+                                                <a href="service.html#scaling-up">Scaling Up</a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <h5 class="color-blue">Hire Team </h5>
+                                            <div>
+                                                <a href="hiring-team.html#team-hiring">MVP Builders</a>
+                                            </div>
+                                            <div>
+                                                <a href="hiring-team.html#build-team">UI/UX Innovators</a>
+                                            </div>
+                                            <div>
+                                                <a href="hiring-team.html#team-hiring">Product Developers</a>
+                                            </div>
+                                            <div>
+                                                <a href="hiring-team.html#build-team">Product Success Strategists</a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <h5 class="color-blue">Machine Learning</h5>
+                                            <div>
+                                                <a href="technology.html#machine-learning">Task Automation</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#machine-learning">Process Automation</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#machine-learning">Resource</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#machine-learning">Empowerment</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html">BI-driven Growth</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html">Strategy</a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <h5 class="color-blue">Technology</h5>
+                                            <div>
+                                                <a href="technology.html#app-development">Apps Development</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#web-solution">Portal Development</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#machine-learning">Machine Learning</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#cloud-consulting">Cloud Consulting</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#analytics-consulting">Analytic Consulting</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <button onclick="location.href='contact-us.html'">
+                                            Got a Product Idea ? Initiate a Discussion <img alt="No image available" src="img/icon-arrow-white.png" />
+                                        </button>
+                                    </div>   
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="javascript:void(0)" class="nav-link">
+                                    Technology
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </a>
+                                <div class="dropdown-content">
+                                    <div class="d-flex w-100 inv-menu-drop-container">
+                                        <div class="column">
+                                            <h5 class="color-blue#app-development">Mobile Technology </h5>
+                                            <div>
+                                                <a href="technology.html#app-development">Android</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#app-development">iOS</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#app-development">React Native</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#app-development">Flutter </a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <h5 class="color-blue">Web Technology </h5>
+                                            <div>
+                                                <a href="technology.html#web-solution">Django</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#web-solution">Tornado</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#web-solution">Flask</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#web-solution">Larave</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#web-solution">ROR</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#web-solution">Springboot</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#web-solution">Node.js</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#web-solution">Angular</a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <h5 class="color-blue">Cloud Consulting </h5>
+                                            <div>
+                                                <a href="technology.html#cloud-consulting">AWS</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#cloud-consulting">Gcloud</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#cloud-consulting">Azure</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#cloud-consulting">AWS LEX</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#cloud-consulting">Google Dialogue flow</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#cloud-consulting">Microsoft LUIS</a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#cloud-consulting">IBM Watson </a>
+                                            </div>
+                                            <div>
+                                                <a href="technology.html#cloud-consulting">Rasa </a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <h5 class="color-blue">BI Tools</h5>
+                                            <div><a href="technology.html#bi">Power BI</a></div>
+                                            <div><a href="technology.html#bi">Tableau</a></div>
+                                            <div><a href="technology.html#bi">Plotly</a></div>
+                                        </div>
+                                        <div class="column">
+                                            <h5 class="color-blue">Machine Learning</h5>
+                                            <div><a href="technology.html#machine-learning">Chatbot Development</a></div>
+                                            <div><a href="technology.html#machine-learning">Process Automation </a></div>
+                                            <div><a href="technology.html#machine-learning">Natural Language Processing</a></div>
+                                            <div><a href="technology.html#machine-learning">Recommendation Engine</a></div>
+                                            <div><a href="technology.html#machine-learning">Deep learning</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <button onclick="location.href='contact-us.html'">
+                                            Got a Product Idea ? Initiate a Discussion <img alt="No image available" src="img/icon-arrow-white.png" />
+                                        </button>
+                                    </div>   
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="career.html" class="nav-link">Career</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="hiring-team.html" class="nav-link">Hire Team</a>
+                            </li>
+                        </ul>
+                        <button onclick="location.href='contact-us.html'" class="btn btn-primary ml-3">Get in Touch</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="inv-banner inv-banner-home">
+        <div class="inv-banner-container container d-flex">
+            <div class="mt-5">
+                <h1 class="mb-4 h2">Amplify Business Growth with Prevailing Digital Products!</h1>
+                <p class="inv-home-head2">Drive business to the unpredictable summits of success by blending innovation with business intelligence.</p>
+                <p>We can help you from conceptualization to victorious business mushrooming with our tech expertise and business proficiency.</p>
+            </div>
+        </div>
+    </div>
+    <div class="inv-case-study-container">
+        <div class="container">
+            <div class="inv-case-study-banner">
+                <div class="inv-case-study-banner-container">
+                    <img alt="No image available" src="img/about-banner.png" class="img-fluid inv-casstudy-people" >
+                </div>
+                
+                <div class="row inv-case-study">
+                    <div class="col-sm-5 pr-4">
+                        <h2 class="color-dark inv-heading">Case Studies</h2>
+                        <p class="color-blue pt-3">Translate By Humans, is a professional language service provider and is headquartered in London, UK. Translate By Humans delivers all services by certified native language experts.</p>
+                        <a href="case-study.html" class="inv-view-more color-dark">Learn more</a>
+                    </div>
+                    <div class="col-sm-7 text-right">
+                        <img alt="No image available" src="img/case-study-banner.png" class="img-fluid inv-casestudy-img" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="inv-empower-bus">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-8 position-relative">
+                    <h2 class="color-dark inv-heading">How We Empower Businesses?</h2>
+                    <p class="color-blue pt-3 inv-empower-p">Our passionate, talented, creative, and experienced team will help you conceptualize, build, scale-up, and grow your business with the same passion as you follow. We can help you with each or a specific stage of business growth funnel with our one or more highly-strategic and business-driven services.</p>
+                    <div class="row mb-5 mt-5 mm-0 color-dark">
+                        <div class="col-sm-6">
+                            <div class="inv-emp-buis-points h-100 d-flex flex-column">
+                                <h3 class="color-blue">Product Development</h3>
+                                <ul>
+                                    <li><a href="service.html#product-building">Prototyping Building</a></li>
+                                    <li><a href="service.html#mvp-development">MVP Development</a></li>
+                                    <li><a href="service.html#product-roadmap">Product Roadmap</a></li>
+                                    <li><a href="service.html#scaling-up">Scaling Up</a></li>
+                                </ul>
+                                <div class="mt-auto">
+                                    <a href="service.html" class="inv-view-more color-dark">Learn more</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="inv-emp-buis-points h-100 d-flex flex-column">
+                                <h3 class="color-blue">Hire Team </h3>
+                                <ul>
+                                    <li><a href="hiring-team.html#team-hiring">MVP Builders</a></li>
+                                    <li><a href="hiring-team.html#build-team">UI/UX Innovators</a></li>
+                                    <li><a href="hiring-team.html#team-hiring">Product Developers</a></li>
+                                    <li><a href="hiring-team.html#build-team">Product Success Strategists</a></li>
+                                </ul>
+                                <div class="mt-auto">
+                                    <a href="hiring-team.html" class="inv-view-more color-dark">Learn more</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-7 d-flex align-items-end">
-                        <img class="img-fluid" src="img/Group 9.png" alt="">
+                    <div class="row mm-0 color-dark">
+                        <div class="col-sm-6">
+                            <div class="inv-emp-buis-points h-100 d-flex flex-column">
+                                <h3 class="color-blue">Machine Learning</h3>
+                                <ul>
+                                    <li><a href="technology.html#machine-learning">Task Automation</a></li>
+                                    <li><a href="technology.html#machine-learning">Process Automation</a></li>
+                                    <li><a href="technology.html#machine-learning">Resource Empowerment</a></li>
+                                    <li><a href="technology.html#machine-learning">BI-driven Growth Strategy</a></li>
+                                </ul>
+                                <div class="mt-auto">
+                                    <a href="technology.html" class="inv-view-more color-dark">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="inv-emp-buis-points h-100 d-flex flex-column">
+                                <h3 class="color-blue">Technology</h3>
+                                <ul>
+                                    <li><a href="technology.html#app-development">Apps Development</a></li>
+                                    <li><a href="technology.html#web-solution">Portal Development</a></li>
+                                    <li><a href="technology.html#machine-learning">Machine Learning</a></li>
+                                    <li><a href="technology.html#cloud-consulting">Cloud Consulting</a></li>
+                                    <li><a href="technology.html#analytics-consulting">Analytic Consulting</a></li>
+                                </ul>
+                                <div class="mt-auto">
+                                    <a href="technology.html" class="inv-view-more color-dark">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="inv-empower-btn">
+                            <a href="contact-us.html" class="color-white">
+                                Initiate a Discuss on How Can We Empower Your Business.
+                                <img alt="No image available" src="img/icon-arrow-white.png" >
+                            </a>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container mt-5">
+    </div>
+    <div class="inv-professional-process">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="color-black inn-content-title">Our unique blend of expertise</h2>
+                <div class="col-sm-9">
+                    <h2 class="inv-heading color-dark">Professional Process with Meticulous Approach</h2>
+                    <p class="pt-3 color-blue">Our personalized and highly business centric methodology is crafted to aid our clients to achieve their predefined business goals within the stipulated time in an augmented manner.</p>
                 </div>
             </div>
-            <div class="row inn-content-links">
-                <div class="col-sm-6">
-                    <ul>
+            <div class="row mt-5">
+                <div class="col-sm-12">
+                    <ul class="inv-professional-process-list">
                         <li>
-                            <a href="javascript:void(0)"> <img src="img/icon-check.png" alt="icon" /> Mobile Apps</a>
+                            <h4 class="color-blue mb-3">Brainstorming</h4>
+                            <p>Innovating a unique idea to capture opportunities.</p>
+                            <span class="d-flex align-items-center justify-content-center">
+                                <img alt="No image available" src="img/icon-arrow-white.png" />
+                            </span>
                         </li>
                         <li>
-                            <a href="javascript:void(0)"> <img src="img/icon-check.png" alt="icon" /> Web Portals</a>
+                            <h4 class="color-blue mb-3">Prototyping</h4>
+                            <p>Building a prototype to map specification with needs.</p>
+                            <span class="d-flex align-items-center justify-content-center">
+                                <img alt="No image available" src="img/icon-arrow-white.png" />
+                            </span>
                         </li>
                         <li>
-                            <a href="javascript:void(0)"> <img src="img/icon-check.png" alt="icon" /> Machine Learning</a>
+                            <h4 class="color-blue mb-3">MVP</h4>
+                            <p>Enhancing the efficacy with controlled investment.</p>
+                            <span class="d-flex align-items-center justify-content-center">
+                                <img alt="No image available" class="img-fluid" src="img/icon-arrow-white.png" />
+                            </span>
                         </li>
                         <li>
-                          <a href="javascript:void(0)"> <img src="img/icon-check.png" alt="icon" /> Artificial Intelligence</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-6">
-                    <ul>
-                        <li>
-                            <a href="javascript:void(0)"> <img src="img/icon-check.png" alt="icon" /> BI Tools</a>
+                            <h4 class="color-blue mb-3">Iterate</h4>
+                            <p>Repeat until reaching final product specifications.</p>
+                            <span class="d-flex align-items-center justify-content-center">
+                                <img alt="No image available" class="img-fluid"src="img/icon-arrow-white.png" />
+                            </span>
                         </li>
                         <li>
-                            <a href="javascript:void(0)"> <img src="img/icon-check.png" alt="icon" /> Cloud Consulting</a>
+                            <h4 class="color-blue mb-3">Product Launch</h4>
+                            <p>Build and launch a product everyone would love! </p>
+                            <span class="d-flex align-items-center justify-content-center">
+                                <img alt="No image available" class="img-fluid" src="img/icon-arrow-white.png" />
+                            </span>
                         </li>
                         <li>
-                            <a href="javascript:void(0)"> <img src="img/icon-check.png" alt="icon" /> Analytics Consulting</a>
+                            <h4 class="color-blue mb-3">Track & Learn</h4>
+                            <p>Closely monitor to gauge future growth strategies.</p>
+                            <!-- <span class="d-flex align-items-center justify-content-center">
+                                <img alt="No image available" src="img/icon-arrow-white.png" />
+                            </span> -->
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="inn-footer">
-            <div class="inn-foot-bg">
-                <div class="col-sm-6 inn-foot-white">
-
-                </div>
-                <div class="col-sm-6 inn-foot-blue">
-                    
-                </div>
-            </div>
+    </div>
+    <div class="inv-aboutus">
+        <div class="inv-aboutus-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 inn-footer-white d-flex align-items-center">
-                        <h4 class="color-black">Made with <i class="fa fa-heart" aria-hidden="true"></i> in India</h4>
+                    <div class="col-lg-9 col-md-12">
+                        <h2 class="color-white inv-heading">About Us</h2>
+                        <p class="mt-5 color-white inv-aboutinv-primary mb-4">Innovatics is a place where innovation blends analytics to unveil never thought before business growth opportunities.</p>
+                        <div class="color-white">
+                            <p class="mb-4">We aim to build digital solutions that are personalized and driven by innovation, modern technology, and business intelligence. We distinguish each business and treat them distinctively because each business, its objectives, and its vision are different.</p>
+                            <p class="mb-4">Our approach of nurturing the uniqueness of a business and empowering it with the trending technologies such as artificial intelligence, Machine Learning, Analytics, Internet of Things, etc. aid us to devise a tailored solution for each client. Our holistic services, meticulous process, and agile scrum framework aid our clients to leverage real business value.</p>
+                            <p class="mb-4">Our leaders have rich experience of working with a lean startup to Fortune 500 companies. Some of the names our leaders have benefited with their adroitness are PayTm, Goibibo, Titan, Aditya Birla, Talk Talk, Convergys, and the list goes on.</p>
+                            <p class="mb-4">Our motto is simple: Keep customers and teams at the heart to build a victorious ambiance.</p>
+                        </div>
                     </div>
-                    <div class="col-sm-6 inn-footer-blue d-flex align-items-center d-flex align-items-center">
-                        <div>
-                            <p><a style="color:darkblue" href="mailto:magic@teaminnovatics.com">magic@teaminnovatics.com</a></p>
-                            <p>+91 9558826155</p>
+                    <div class="col-lg-3 col-md-12">
+                        <div class="inv-aboutus-img-side"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container inv-aboutus-block-container">
+            <div class="row">
+                <div class="col-lg-10 col-md-12">
+                    <ul class="inv-aboutus-block">
+                        <li>
+                            <img alt="No image available" class="img-fluid" src="img/Rectangle-1.png" >
+                        </li>
+                        <li>
+                            <img alt="No image available" class="img-fluid" src="img/Rectangle-2.png" >
+                        </li>
+                        <li>
+                            <img alt="No image available" class="img-fluid" src="img/Rectangle-3.png" >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="inv-tech-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <h2 class="inv-heading text-dark">Technology Dexterity</h2>
+                    <p class="color-blue ">From conventional to futuristic, we have proficiency in all popular technologies. Our offering bouquet covers you all for any technological need.</p>
+                </div>
+            </div>
+            <div class="row inv-tech-carousel">
+                <div class="col-sm-12">
+                    <div class="d-flex flex-column inv-mobile-view">
+                        <div class="slick-slideshow__slide inv-owl-item h-100">
+                            <img alt="No image available" class="img-fluid" src="img/tech-1.png" />
+                            <h5 class="color-blue mt-3">Mobile Technology </h5>
+                            <div class="d-flex inv-carousel-content-height">
+                                <ul>
+                                    <li>Android</li>
+                                    <li>iOS</li>
+                                    <li>React Native</li>
+                                    <li>Flutter</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slick-slideshow__slide inv-owl-item h-100">
+                            <img alt="No image available" class="img-fluid" src="img/tech-2.png" />
+                            <h5 class="color-blue mt-3">Web Technology</h5>
+                            <div class="d-flex inv-carousel-content-height">
+                                <ul>
+                                    <li>Django</li>
+                                    <li>Tornado</li>
+                                    <li>Flask</li>
+                                    <li>Laravel</li>
+                                </ul>
+                                <ul class="ml-4">
+                                    <li>ROR</li>
+                                    <li>Springboot</li>
+                                    <li>Node.js </li>
+                                    <li>Angular</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slick-slideshow__slide inv-owl-item h-100">
+                            <img alt="No image available" class="img-fluid" src="img/tech-3.png" />
+                            <h5 class="color-blue mt-3">Cloud Consulting</h5>
+                            <div class="d-flex inv-carousel-content-height">
+                                <ul>
+                                    <li>AWS</li>
+                                    <li>Rasa</li>
+                                    <li>Azure</li>
+                                    <li>AWS LEX</li>
+                                </ul>
+                                <ul class="ml-4">
+                                    <li>Google Dialogue flow</li>
+                                    <li>Microsoft LUIS</li>
+                                    <li>IBM Watson</li>
+                                    <li>Google Cloud</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slick-slideshow__slide inv-owl-item h-100">
+                            <img alt="No image available" class="img-fluid" src="img/tech-4.png" />
+                            <h5 class="color-blue mt-3">Analytics Consulting</h5>
+                            <div class="d-flex inv-carousel-content-height">
+                                <ul>
+                                    <li>Power BI</li>
+                                    <li>Tableau</li>
+                                    <li>Plotly</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slick-slideshow__slide inv-owl-item h-100">
+                            <img alt="No image available" class="img-fluid" src="img/info-graphic-7.png" />
+                            <h5 class="color-blue mt-3">Machine Learning</h5>
+                            <div class="d-flex inv-carousel-content-height">
+                                <ul>
+                                    <li>Chatbot Development</li>
+                                    <li>Process Automation</li>
+                                    <li>Natural Language Processing</li>
+                                    <li>Recommendation Engine</li>
+                                    <li>Deep learning</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="regular inv-slider slider inv-dashboard-view">
+                        <div class="slick-slideshow__slide inv-owl-item h-100">
+                            <img alt="No image available" class="img-fluid" src="img/tech-1.png" />
+                            <h5 class="color-blue mt-3">Mobile Technology </h5>
+                            <div class="d-flex inv-carousel-content-height">
+                                <ul>
+                                    <li>Android</li>
+                                    <li>iOS</li>
+                                    <li>React Native</li>
+                                    <li>Flutter</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slick-slideshow__slide inv-owl-item h-100">
+                            <img alt="No image available" class="img-fluid" src="img/tech-2.png" />
+                            <h5 class="color-blue mt-3">Web Technology</h5>
+                            <div class="d-flex inv-carousel-content-height">
+                                <ul>
+                                    <li>Django</li>
+                                    <li>Tornado</li>
+                                    <li>Flask</li>
+                                    <li>Laravel</li>
+                                </ul>
+                                <ul class="ml-4">
+                                    <li>ROR</li>
+                                    <li>Springboot</li>
+                                    <li>Node.js </li>
+                                    <li>Angular</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slick-slideshow__slide inv-owl-item h-100">
+                            <img alt="No image available" class="img-fluid" src="img/tech-3.png" />
+                            <h5 class="color-blue mt-3">Cloud Consulting</h5>
+                            <div class="d-flex inv-carousel-content-height">
+                                <ul>
+                                    <li>AWS</li>
+                                    <li>Rasa</li>
+                                    <li>Azure</li>
+                                    <li>AWS LEX</li>
+                                </ul>
+                                <ul class="ml-4">
+                                    <li>Google Dialogue flow</li>
+                                    <li>Microsoft LUIS</li>
+                                    <li>IBM Watson</li>
+                                    <li>Google Cloud</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slick-slideshow__slide inv-owl-item h-100">
+                            <img alt="No image available" class="img-fluid" src="img/tech-4.png" />
+                            <h5 class="color-blue mt-3">Analytics Consulting</h5>
+                            <div class="d-flex inv-carousel-content-height">
+                                <ul>
+                                    <li>Power BI</li>
+                                    <li>Tableau</li>
+                                    <li>Plotly</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slick-slideshow__slide inv-owl-item h-100">
+                            <img alt="No image available" class="img-fluid" src="img/info-graphic-7.png" />
+                            <h5 class="color-blue mt-3">Machine Learning</h5>
+                            <div class="d-flex inv-carousel-content-height">
+                                <ul>
+                                    <li>Chatbot Development</li>
+                                    <li>Process Automation</li>
+                                    <li>Natural Language Processing</li>
+                                    <li>Recommendation Engine</li>
+                                    <li>Deep learning</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="inv-insight">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2 class="inv-heading text-dark">Insights</h2>
+                    <p class="color-blue ">Our latest blogs feature trending technologies and insights on business methodologies to let you build a stronger market position.</p>
+                </div>
+            </div>
+            <div class="row inv-tech-carousel">
+                <div class="col-sm-12">
+                    <div class="d-flex flex-column inv-mobile-view">
+                        <div class="h-100">
+                            <img alt="No image available" class="img-fluid" src="img/blog-img-01.jpg" />
+                            <p class="mt-3">How Chatbot Redefines Customer Services?</p>
+                            <a href="blog-1.html" class="inv-view-more color-dark">Read more</a>
+                        </div>
+                        <div class="h-100">
+                            <img alt="No image available" class="img-fluid" src="img/blog-img-02.jpg" />
+                            <p class="mt-3">How Technologies Are Augmenting Different Businesses?</p>
+                            <a href="blog-2.html" class="inv-view-more color-dark">Read more</a>
+                        </div>
+                        <div class="h-100">
+                            <img alt="No image available" class="img-fluid" src="img/blog-img-04.jpg" />
+                            <p class="mt-3">Why OTT Platform Should Invest in Data Analytics?</p>
+                            <a href="blog-4.html" class="inv-view-more color-dark">Read more</a>
+                        </div>
+                    </div>
+                    <section class="owl-carousel inv-slider inv-dashboard-view">
+                        <div class="h-100">
+                            <img alt="No image available" class="img-fluid" src="img/blog-img-01.jpg" />
+                            <p class="mt-3">How Chatbot Redefines Customer Services?</p>
+                            <a href="blog-1.html" class="inv-view-more color-dark">Read more</a>
+                        </div>
+                        <div class="h-100">
+                            <img alt="No image available" class="img-fluid" src="img/blog-img-02.jpg" />
+                            <p class="mt-3">How Technologies Are Augmenting Different Businesses?</p>
+                            <a href="blog-2.html" class="inv-view-more color-dark">Read more</a>
+                        </div>
+                        <div class="h-100">
+                            <img alt="No image available" class="img-fluid" src="img/blog-img-04.jpg" />
+                            <p class="mt-3">Why OTT Platform Should Invest in Data Analytics?</p>
+                            <a href="blog-4.html" class="inv-view-more color-dark">Read more</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="inv-get-started">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 ml-auto">
+                    <div class="inv-contact-container">
+                        <div class="row">
+                            <div class="col-sm-6 inv-contact-form">
+                                <h3 class="color-dark inv-heading">Let’s Get Started</h3>
+                                <div class="mb-5">
+                                    <div class="form-field">
+                                        <input class="form-control" type="text" name="" placeholder="Name" id="name" />
+                                    </div>
+                                    <div class="form-field">
+                                        <input class="form-control" type="text" name="" placeholder="Email" id="email" />
+                                    </div>
+                                    <div class="form-field">
+                                        <input class="form-control" type="text" name="" placeholder="Phone Number" id="phone" />
+                                    </div>
+                                    <div class="form-field">
+                                        <textarea name="projec_detail" placeholder="Project Details" id="project_detail" class="form-control"></textarea>
+                                    </div>
+                                    <!-- <div class="d-flex  ">
+                                        <div class="col-sm-6 p-0">
+                                            <label class="checkbox bounce blue">
+                                                <input type="checkbox" >
+                                                <svg viewBox="0 0 21 21">
+                                                    <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                                                </svg>
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-6 text-right p-0">
+                                            <a href="javascript:void(0)"><img alt="No image available" src="img/attach.png" class="mr-2"  />Attach File</a>
+                                        </div>
+                                    </div> -->
+                                    <div class="form-field">
+                                        <input type="button" onclick="submit_below_form();" value="Send Request" class="btn btn-primary-blue w-100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <h3 class="color-dark inv-heading">What to Expect Next?</h3>
+                                <div class="mt-5 inv-contact-expect-list">
+                                    <ul>
+                                        <li>Response within 24 hours</li>
+                                        <li>Congregating all necessary details</li>
+                                        <li>Analysis and proposal preparation</li>
+                                        <li>Finalizing the project</li>
+                                        <li>NDA to keep confidentiality intact</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="inv-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3 class="color-grey">Services</h3>
+                    <ul class="inv-footer-link mt-3">
+                        <li>
+                            <a href="service.html">Product Development</a>
+                        </li>
+                        <li>
+                            <a href="service.html">MVP Development</a>
+                        </li>
+                        <li>
+                            <a href="service.html">Product Prototyping</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Business Strategy</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Product Roadmap</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Product Scaling</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3 class="color-grey">Technology</h3>
+                    <ul class="inv-footer-link mt-3">
+                        <li>
+                            <a href="technology.html">Mobile Apps Development</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Portal Devlopment</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Cloud Consulting</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">BI Tools</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Machine Learning</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Analytic Consulting</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3 class="color-grey">Contact Us</h3>
+                    <ul class="inv-footer-link mt-3">
+                        <li>
+                            <a href="contact-us.html">+91 9558826127</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.html">magic@teaminnovatics.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3 class="color-grey">Stay Connected</h3>
+                    <ul class="inv-footer-link mt-3">
+                        <li>
+                            <form action="">
+                                <div class="inv-contact-email d-flex">
+                                    <input type="email" name="emailaddress" id="emailaddress" placeholder="Your Email Address" />
+                                    <button class="inv-contact-email-btn"><img alt="No image available" src="img/icon-arrow-white.png"  srcset=""></button>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <a href="index.html"><img alt="No image available" src="img/Logo Light.png" class="img-footer-logo" ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="inv-foot-note">
+        <div class="container inv-footnot-container text-center">
+            &copy; Innovatics, 2020. All rights reserved
+        </div>
+    </div>
+    <script>
+        function isEmail(email) {
+            var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return regex.test(email);
+        }
+        function isPhone(phone){
+            var regex = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
+            return regex.test(phone)
+        }
+        function validate_contactus(){
+            // alert()
+            if ($("#email").val() != "" && isEmail($("#email").val())){ 
+                if ($("#phone").val() != "" && isPhone($("#phone").val())){ 
+                    if($.trim($("#name").val()) == "")
+                    {
+                        alert("Name can not be blank");
+                        return false;
+                    }
+                    if($.trim($("#project_detail").val()) == "")
+                    {
+                        alert("Project details can not be blank");
+                        return false;
+                    }
+                    return true;
+                }
+                else{
+                    alert("Invalid Phone Number")
+                    return false;
+                }
+            }
+            else{
+                alert("Invalid Email")
+                return false;
+            }
+        }
+
+        function submit_below_form(){
+            
+            if (!validate_contactus()){
+                return false;
+            }
+            else{
+                var name = $("#name").val();
+                var email = $("#email").val();
+                var phone = $("#phone").val();
+                var subject = $("#project_detail").val();
+                // var note = $("#txtNote").val();
+                $.ajax({
+                        url: "https://5qs4ts6du5.execute-api.us-east-1.amazonaws.com/contact-us",
+                        type: "POST",
+                        data: {"name": name, "email": email, "phone": phone, "subject": subject},
+                        dataType:'json',
+                        success: function (response) {
+                            console.log(response);
+                        },
+                        error: function(error){
+                            console.log("Something went wrong", error);
+                        }
+                    });
+                alert("Thanks for contacting us. We will get back to you shortly.");
+        }
+        }
+        function checkScroll() {
+            if($(window).scrollTop() >= 100) {
+                $('.navbar').addClass('solid');
+            } else {
+                $('.navbar').removeClass('solid');
+            }
+        }
+        $(function(){
+            checkScroll()
+            $(window).scroll(checkScroll);
+            $('.navbar-toggler').click(function() {
+                if($(window).scrollTop() <= 300) {
+                    $('nav.navbar').toggleClass('solid-toggle');
+                }
+            });
+            
+            setTimeout(function() {
+                var containerHeight = $('.inv-casstudy-people').height();
+                $('.inv-case-study-banner-container').css({'min-height': containerHeight - 50})
+            }, 450)
+            $(window).resize(function(){
+                var containerHeightResize = $('.inv-casstudy-people').height();
+                $('.inv-case-study-banner-container').css({'min-height': containerHeightResize - 50})
+            });
+            var $owl = $('.owl-carousel');
+            $owl.owlCarousel({
+                center: false,
+                loop: true,
+                items: 1,
+                autoPlay: true,
+                responsive: {
+                    480:{
+                        items: 1
+                    },
+                    650:{
+                        items: 2
+                    },
+                    1200: {
+                        items: 3
+                    }
+                }
+            });
+            var $carousel = $('.regular');
+            var settings = {
+                dots: false,
+                arrows: false,
+                slide: '.slick-slideshow__slide',
+                slidesToShow: 3,
+                centerMode: true,
+                centerPadding: '100px',
+                responsive: [
+                    {
+                        breakpoint: 1025,
+                        settings: {
+                            dots: false,
+                            arrows: false,
+                            slide: '.slick-slideshow__slide',
+                            slidesToShow: 2,
+                            centerMode: true,
+                            centerPadding: '100px',
+                        }
+                    },
+                    {
+                        breakpoint: 580,
+                        settings: {
+                            dots: false,
+                            arrows: false,
+                            slide: '.slick-slideshow__slide',
+                            slidesToShow: 1,
+                            centerMode: true,
+                            centerPadding: '0px',
+                        }
+                    }
+                ]
+            };
+            function setSlideVisibility() {
+                //Find the visible slides i.e. where aria-hidden="false"
+                var visibleSlides = $carousel.find('.slick-slideshow__slide[aria-hidden="false"]');
+                //Make sure all of the visible slides have an opacity of 1
+                $(visibleSlides).each(function() {
+                    $(this).css('opacity', 1);
+                });
+
+                //Set the opacity of the first and last partial slides.
+                $(visibleSlides).first().prev().css('opacity', 0);
+            }
+
+            $carousel.slick(settings);
+            $carousel.slick('slickGoTo', 1);
+            setSlideVisibility();
+            $carousel.on('afterChange', function() {
+                setSlideVisibility();
+            });
+            $('#toggler').show();
+            $('#close2').hide();
+            $('#toggler, #colse2').click(function() {
+                if($('.inv-menu').hasClass('open')){
+                    $('#toggler').show();
+                    $('#close2').hide();
+                } else {
+                    $('#toggler').hide();
+                    $('#close2').show();
+                }
+                $('.inv-menu').toggleClass('open')
+            });
+            $('.inv-mobile li a').click(function() {
+                var that =  this;
+                $('.inv-mobile > li').each(function(index, elm){
+                    if($(elm).find('.nav-link')[0] && $(elm).find('.nav-link')[0].innerText !== that.innerText) {
+                        $(elm).removeClass('scroll-open');
+                    }
+                });    
+                $(this).parent().toggleClass('scroll-open');
+            });
+        });
+    </script>
 </body>
 </html>
